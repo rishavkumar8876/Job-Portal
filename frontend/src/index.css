@@ -44,3 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 .job-card {
   @apply bg-white border border-border/50 hover:border-primary/50 rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] duration-300 cursor-pointer;
 }
+
+.match-score-gradient {
+  background: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+}
