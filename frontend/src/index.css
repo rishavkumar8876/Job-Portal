@@ -1,0 +1,46 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Clash Display', sans-serif;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary-hover shadow-sm font-medium px-6 py-2.5 rounded-lg duration-300 active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 shadow-sm font-medium px-6 py-2.5 rounded-lg duration-300;
+}
+
+.btn-outline {
+  @apply border border-border bg-background hover:bg-background-subtle font-medium px-6 py-2.5 rounded-lg duration-300;
+}
+
+.input-field {
+  @apply flex h-10 w-full rounded-md border border-border bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2;
+}
+
+.card {
+  @apply bg-white border border-border/50 rounded-xl p-6 shadow-sm hover:shadow-md duration-300;
+}
+
+.job-card {
+  @apply bg-white border border-border/50 hover:border-primary/50 rounded-xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] duration-300 cursor-pointer;
+}
